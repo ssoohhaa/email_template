@@ -3,152 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRMS Verification</title>
+    <title>HRMS Welcome Email</title>
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F8FAFC;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 640px;
-            padding: 48px;
-            margin: 0 auto;
-        }
-
-        .header {
-            height: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header .logo {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .header .logo img {
-            height: 100%;
-        }
-
-        .header .logo span {
-            font-size: 20px;
-            font-weight: 700;
-            color: #090216;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 700;
-            color: black;
-            margin-top: 24px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #384860;
-        }
-
-        .verification-code {
-            display: flex;
-            gap: 10px;
-            margin: 16px 0;
-        }
-
-        .verification-code div {
-            width: 64px;
-            height: 64px;
-            border: 1px solid #2969FF;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 700;
-            color: #030b1d;
-        }
-
-        .btns button {
-            width: 125px;
-            height: 32px;
-            border-radius: 8px; /* Rounded edges */
-            border: none;
-            background: none;
-            padding: 0;
-        }
-
-        .btns button img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 8px; /* Ensures the image inside the button matches the rounded shape */
-        }
-
-        footer {
-            margin-top: 24px;
-        }
-
-        footer p {
-            font-size: 16px;
-            margin: 0;
-        }
-
-        footer a {
-            color: #2969FF;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                max-width: 378px;
-                padding: 24px;
-            }
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <img src="img/Frame 37.png" alt="HRMS Logo">
-                <span>HRMS</span>
+<body style="font-family: 'Inter'; padding-left: 48px; padding-right: 48px;">
+    <div class="container my-5 px-3">
+        <!-- Header Section -->
+        <header class="d-flex justify-content-between align-items-center py-3">
+            <div class="logo d-flex align-items-center">
+                <img src="img/Frame 37.png" alt="HRMS Logo" class="hrms-logo">
+                <h1 class="mb-0 ms-2" style="color: black;">HRMS</h1>
             </div>
-            <div>
-                <a href="#"><img src="img/twitter.png" alt="Twitter" width="24"></a>
-                <a href="#"><img src="img/facebook.png" alt="Facebook" width="24"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram" width="24"></a>
+            <div class="social-icons">
+                <a href="#"><img src="img/twitter.png" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
             </div>
         </header>
-        <h2>Confirm Verification Code</h2>
-        <p>Hi Jack,</p>
-        <p>This is your verification code:</p>
-        <div class="verification-code">
-            <div>4</div>
-            <div>4</div>
-            <div>8</div>
-            <div>6</div>
+        <hr>
+
+        <!-- Welcome Section -->
+        <section class="mt-3">
+            <h2 class="welcome-title">Welcome Alex,</h2>
+            <p class="lead mb-3">Welcome to HRMS – where managing work meets effortless fun! 🎉<br>We’re thrilled to have you on board!</p>
+            <p class="mb-4 text-black">Here's your magic key to dive in and explore:</p>
+            <div class="credentials" style="max-width: 400px;">
+                <p class="credentials-detail">👤 Username: <b>chaitanya@gmail.com</b></p>
+                <p class="credentials-detail">🔒 Password: <b>you@Chaitanya</b></p>
+                <p class="credentials-note" style="margin-top: 16px;">Important note: For your security, we recommend changing your password after your first login.</p>
+            </div>
+        </section>
+        
+
+        <!-- Features Section -->
+        <div class="features" style="margin-top: 16px;">
+            <div class="col-md-3">
+                <img src="img/cg.png" alt="Tick" class="circular-tick"> Employee Development
+            </div>
+            <div class="col-md-3">
+                <img src="img/cg.png" alt="Tick" class="circular-tick"> Compensation and Benefits
+            </div>
+            <div class="col-md-3">
+                <img src="img/cg.png" alt="Tick" class="circular-tick"> Performance Management
+            </div>
+            <div class="col-md-3">
+                <img src="img/cg.png" alt="Tick" class="circular-tick"> Location Tracking
+            </div>
         </div>
-        <p>Whether you're here for your brand, for a cause, or just for fun — welcome! This code will only be valid for the next 5 minutes. If the code does not work, you can use this login verification link:</p>
-        <p>Thanks, <br>HRMS Team</p>
-        <div class="btns d-flex gap-2">
-            <button>
-                <img src="img/gplay.png" alt="Google Play">
-            </button>
-            <button>
-                <img src="img/app.png" alt="App Store">
-            </button>
+
+        <!-- Call to Action Section -->
+        <div class="cta mt-4">
+            <button class="btn btn-primary btn-lg text-white confirm-btn">Confirm Email Address</button>
         </div>
-        <footer>
-            <p>Questions or faq? Contact us at <a href="mailto:faq@hrms.com">faq@hrms.com</a>. If you'd rather not receive this kind of email, <a href="#">unsubscribe</a>.</p>
-            <p>Baner, Pune</p>
-            <p>© 2025 HRMS</p>
+
+        <!-- Footer Section -->
+        <footer class="mt-5 small">
+            <p>HRMS at the touch of a button! Download our app for Google & Mac.</p>
+            <div class="d-flex justify-content-start gap-2">
+                <button class="google-play-btn">
+                    <img src="img/gplay.png" alt="Google Play">
+                </button>
+                <button class="app-store-btn">
+                    <img src="img/app.png" alt="App Store">
+                </button>
+            </div>
+            <p class="mt-3 mb-0" style="margin-top: 16px;">
+                Questions or faq? Contact us at <a href="mailto:faq@hrms.com">faq@hrms.com</a>. If you’d rather not receive this kind of email, Don't want any more emails from HRMS <a href="#">unsubscribe</a>.
+            </p>
+            <p class="mb-0" style="margin-top: 16px;">Baner, Pune</p>
+            <p class="mb-0">©2025 HRMS</p>
         </footer>
+        
     </div>
 </body>
 </html>
